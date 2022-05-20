@@ -3,6 +3,6 @@ export const elevation = {
 	borderColor: "#000",
 	borderWidth: 3,
 	borderStyle: "solid",
-	borderRadius: 25,
+	borderRadius: 55,
 	padding: 10
 };

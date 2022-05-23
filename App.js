@@ -5,6 +5,7 @@ import Header from "./src/components/Header";
 import Search from "./src/components/Search";
 import CategoryItem from "./src/components/CategoryItem";
 import Categories from "./src/components/Categories";
+import Restaurants from "./src/components/Restaurants";
 
 export default function App() {
 	// let term = "Bruger"
@@ -44,7 +45,7 @@ export default function App() {
 				setTerm={setTerm}
 				term={term}
 			/>
-
+			<Restaurants />
 			<StatusBar />
 		</View>
 	);

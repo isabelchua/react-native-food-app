@@ -37,7 +37,7 @@ export default function App() {
 	return (
 		<View style={styles.container}>
 			<Header />
-			<Search />
+			<Search setTerm={setTerm} />
 			<FlatList
 				data={commonCategories}
 				renderItem={({ item, index }) => {

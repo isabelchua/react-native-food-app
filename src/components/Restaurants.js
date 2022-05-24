@@ -11,6 +11,8 @@ export default function Restaurants({ term }) {
 		searchRestaurants(term);
 	}, [term]);
 	console.log({ data: data, loading, error });
+
+	if (loading) return <Text>Loading..</Text>;
 	return (
 		<View style={styles.container}>
 			<Text style={styles.header}>Top Restaurants</Text>

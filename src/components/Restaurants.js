@@ -8,6 +8,7 @@ import {
 import useRestaurants from "../hooks/useRestaurants";
 import { useEffect } from "react";
 // import { FlatList } from "react-native-web";
+import RestaurantItem from "./RestaurantItem";
 
 export default function Restaurants({ term }) {
 	const [{ data, loading, error }, searchRestaurants] = useRestaurants();
@@ -33,7 +34,7 @@ export default function Restaurants({ term }) {
 			<FlatList
 				data={data}
 				keyExtractor={restaurant => restaurant.id}
-				renderItem={({ item }) => <Text>{item.name}</Text>}
+				renderItem={({ item }) => <RestaurantItem restaurant={item} />}
 			/>
 		</View>
 	);

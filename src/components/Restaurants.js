@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
 import useRestaurants from "../hooks/useRestaurants";
 import { useEffect } from "react";
 
@@ -12,7 +12,14 @@ export default function Restaurants({ term }) {
 	}, [term]);
 	console.log({ data: data, loading, error });
 
-	if (loading) return <Text>Loading..</Text>;
+	if (loading) return <ActivityIndicator size="large" marginVertical={30} />;
+
+	if (error)
+		return (
+			<View style={styles.container}>
+				<Text style={styles.header}>{error}</Text>
+			</View>
+		);
 	return (
 		<View style={styles.container}>
 			<Text style={styles.header}>Top Restaurants</Text>

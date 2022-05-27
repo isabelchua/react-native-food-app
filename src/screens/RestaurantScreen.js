@@ -8,7 +8,7 @@ export default function RestaurantScreen({ navigation }) {
 
 	const dimensions = Dimensions.get("window");
 	const imageWidth = dimensions.width;
-	const imageHeight = Math.round(dimensions.width * 9) / 16;
+	const imageHeight = Math.round(dimensions.width * 12) / 16;
 
 	useEffect(() => {
 		searchRestaurant(id);

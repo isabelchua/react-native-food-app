@@ -18,9 +18,12 @@ function RestaurantItem({ restaurant, navigation }) {
 				<View style={styles.infoContainer}>
 					<Text style={styles.header}>{restaurant.name}</Text>
 					<View style={styles.info}>
-						<Text style={styles.rating}>{restaurant.rating}</Text>
+						<Text style={styles.rating}>{restaurant.rating} stars</Text>
 						<Text style={styles.money}>{restaurant.price}</Text>
 					</View>
+					<Text style={styles.rating}>
+						{restaurant.review_count} reviews
+					</Text>
 				</View>
 			</View>
 		</TouchableOpacity>

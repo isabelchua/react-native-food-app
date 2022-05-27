@@ -20,7 +20,7 @@ export default () => {
 				params: {
 					limit: 15,
 					term,
-					location: "sf"
+					location: "burlingame"
 				}
 			});
 			setResults({

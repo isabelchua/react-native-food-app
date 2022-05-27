@@ -17,7 +17,7 @@ export default function Search({ setTerm }) {
 			{/* <Text>{input}</Text> */}
 			<TextInput
 				style={styles.input}
-				placeholder="Restaurantes, food"
+				placeholder="Search for food, cuisine.."
 				value={input}
 				onChangeText={text => {
 					setInput(text);

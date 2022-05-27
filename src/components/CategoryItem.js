@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
 	},
 	elevation,
 	image: {
-		width: 37,
-		height: 37
+		width: 40,
+		height: 40
 	},
 	header: {
 		fontWeight: "bold"

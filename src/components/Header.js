@@ -2,20 +2,20 @@ import { Text, View, StyleSheet } from "react-native";
 
 export default function Header() {
 	return (
-		<View style={styles.container}>
-			<Text style={styles.lightHeader}>Grab Your</Text>
-			<Text style={styles.boldHeader}>yummy Meal!</Text>
+		<View style={(styles.container, { flexDirection: "row" })}>
+			<Text style={styles.lightHeader}>Pick what</Text>
+			<Text style={styles.boldHeader}> to eat!</Text>
 		</View>
 	);
 }
 
 const styles = StyleSheet.create({
 	container: {
-		marginTop: 60,
-		marginHorizontal: 25
+		marginTop: 10
 	},
 	lightHeader: {
-		fontSize: 35
+		fontSize: 35,
+		marginLeft: 30
 	},
 	boldHeader: {
 		fontSize: 40,
